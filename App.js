@@ -22,6 +22,7 @@ import PopUp from './src/compontnts/PopUp';
 import Location from './src/compontnts/Location';
 import SendLocation from './src/compontnts/SendLocation';
 import FetchApi from './src/compontnts/FetchApi';
+import TrackingService from './src/trackingservice/TrackingService';
 
 const App = () => {
   // const Tab = createBottomTabNavigator();
@@ -50,7 +51,8 @@ const App = () => {
       {/* <Location /> */}
       {/* <PopUp /> */}
       {/* <SendLocation /> */}
-      <FetchApi />
+      {/* <FetchApi /> */}
+      <TrackingService />
     </View>
 
     // <NavigationContainer>
