@@ -21,7 +21,7 @@ const RohitPackage = () => {
 
     return (
         <View style={{ flex: 1 }}>
-            <ProgressSteps >
+            <ProgressSteps style={{ display: 'flex', flexDirection: 'column' }}>
                 <ProgressStep label="Vehicle Picked">
                     <View style={{ alignItems: 'center' }}>
                         <Text>This is the content within step 1!</Text>
