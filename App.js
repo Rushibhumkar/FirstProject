@@ -22,6 +22,7 @@ import PopUp from './src/compontnts/PopUp';
 import Location from './src/compontnts/Location';
 import SendLocation from './src/compontnts/SendLocation';
 import FetchApi from './src/compontnts/FetchApi';
+import RohitPackage from './src/rohitsPackage/RohitPackage';
 import TrackingService from './src/trackingservice/TrackingService';
 
 const App = () => {
@@ -52,7 +53,8 @@ const App = () => {
       {/* <PopUp /> */}
       {/* <SendLocation /> */}
       {/* <FetchApi /> */}
-      <TrackingService />
+      <RohitPackage />
+      {/* <TrackingService /> */}
     </View>
 
     // <NavigationContainer>
