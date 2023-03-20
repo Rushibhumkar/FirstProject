@@ -25,6 +25,7 @@ import FetchApi from './compontnts/FetchApi';
 import RohitPackage from './rohitsPackage/RohitPackage';
 import TrackingService from './trackingservice/TrackingService';
 import OwnPackage from './mypackage/OwnPackage';
+import ProgressLine from './mypackage/ProgressLine';
 
 const MainFile = () => {
     // const Tab = createBottomTabNavigator();
@@ -35,7 +36,7 @@ const MainFile = () => {
 
     return (
         <View style={{ backgroundColor: '#fff', flex: 1 }}>
-            <Text style={styles.txt}>MainFile</Text>
+            {/* <Text style={styles.txt}>MainFile</Text> */}
             {/* <ColorGenerator /> */}
             {/* <CountDown /> */}
             {/* <HookEffect /> */}
@@ -55,8 +56,9 @@ const MainFile = () => {
             {/* <SendLocation /> */}
             {/* <FetchApi /> */}
             {/* <RohitPackage /> */}
-            <TrackingService />
+            {/* <TrackingService /> */}
             {/* <OwnPackage /> */}
+            <ProgressLine />
         </View>
 
         // <NavigationContainer>

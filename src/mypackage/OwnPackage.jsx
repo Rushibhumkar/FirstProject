@@ -4,7 +4,8 @@ import React from 'react'
 const OwnPackage = () => {
     return (
         <View style={{ flex: 1 }}>
-            <Text style={{ color: 'black' }}>OwnPackage</Text>
+            <View></View>
+            <Text>OwnPackage</Text>
         </View>
     )
 }
