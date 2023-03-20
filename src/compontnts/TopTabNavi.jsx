@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import HorScroll from './compontnts/HorScroll'
-import MapFunction from './compontnts/MapFunction'
-import NetflixCard from './compontnts/NetflixCard'
+import HorScroll from './HorScroll'
+import MapFunction from './MapFunction'
+import NetflixCard from './NetflixCard'
 
 const TopTabNavi = () => {
 
-    const Tab = createMaterialTopTabNavigator();
+  const Tab = createMaterialTopTabNavigator();
 
   return (
     <Tab.Navigator>

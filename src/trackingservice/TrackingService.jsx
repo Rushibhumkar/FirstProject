@@ -21,7 +21,7 @@ const TrackingService = () => {
     return (
         <View style={{ flex: 1 }}>
             <View>
-                <Text style={{ color: 'black', textAlign: 'center', fontWeight: 'bold', fontSize: 20, marginVertical: 20 }}>Your Service Tracking</Text>
+                <Text style={{ color: 'black', textAlign: 'center', fontWeight: 'bold', fontSize: 20, marginVertical: 20 }}>Service Tracking</Text>
                 <Text style={{ color: 'black', textAlign: 'center', fontWeight: 'bold' }}>Date : 12/3/2023 </Text>
                 <Text style={{ color: 'black', textAlign: 'center', fontWeight: 'bold' }}>Day : Monday </Text>
             </View>
