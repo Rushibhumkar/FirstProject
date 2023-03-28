@@ -26,6 +26,9 @@ import RohitPackage from './rohitsPackage/RohitPackage';
 import TrackingService from './trackingservice/TrackingService';
 import OwnPackage from './mypackage/OwnPackage';
 import ProgressLine from './mypackage/ProgressLine';
+import LoginPage from './perfectplateapp/LoginPage';
+import CombineFile from './perfectplateapp/CombineFile';
+
 
 const MainFile = () => {
     // const Tab = createBottomTabNavigator();
@@ -35,35 +38,36 @@ const MainFile = () => {
     // const Drawer = createDrawerNavigator();
 
     return (
-        <View style={{ backgroundColor: '#fff', flex: 1 }}>
-            {/* <Text style={styles.txt}>MainFile</Text> */}
-            {/* <ColorGenerator /> */}
-            {/* <CountDown /> */}
-            {/* <HookEffect /> */}
-            {/* <HorScroll /> */}
-            {/* <Linking /> */}
-            {/* <Login /> */}
-            {/* <MapFunction /> */}
-            {/* <AdvMapFun /> */}
-            {/* <NetflixCard /> */}
-            {/* <SignUp /> */}
-            {/* <SimpleForm /> */}
-            {/* <SimplePage /> */}
-            {/* <DrawerNav /> */}
-            {/* <ShowMore /> */}
-            {/* <Location /> */}
-            {/* <PopUp /> */}
-            {/* <SendLocation /> */}
-            {/* <FetchApi /> */}
-            {/* <RohitPackage /> */}
-            {/* <TrackingService /> */}
-            {/* <OwnPackage /> */}
-            <ProgressLine />
-        </View>
+        // <View style={{ backgroundColor: '#fff', flex: 1 }}>
+        //     {/* <Text style={styles.txt}>MainFile</Text> */}
+        //     {/* <ColorGenerator /> */}
+        //     {/* <CountDown /> */}
+        //     {/* <HookEffect /> */}
+        //     {/* <HorScroll /> */}
+        //     {/* <Linking /> */}
+        //     {/* <Login /> */}
+        //     {/* <MapFunction /> */}
+        //     {/* <AdvMapFun /> */}
+        //     {/* <NetflixCard /> */}
+        //     {/* <SignUp /> */}
+        //     {/* <SimpleForm /> */}
+        //     {/* <SimplePage /> */}
+        //     {/* <DrawerNav /> */}
+        //     {/* <ShowMore /> */}
+        //     {/* <Location /> */}
+        //     {/* <PopUp /> */}
+        //     {/* <SendLocation /> */}
+        //     {/* <FetchApi /> */}
+        //     {/* <RohitPackage /> */}
+        //     {/* <TrackingService /> */}
+        //     {/* <OwnPackage /> */}
+        //     {/* <ProgressLine /> */}
+        //     <LoginPage />
+        // </View>
 
-        // <NavigationContainer>
-        //   <DrawerNav/>
-        // </NavigationContainer>
+        <NavigationContainer>
+            <CombineFile />
+        </NavigationContainer>
 
         // <NavigationContainer>
         //   <Stack.Navigator

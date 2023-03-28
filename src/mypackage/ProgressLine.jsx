@@ -36,89 +36,90 @@ const ProgressLine = () => {
         <View style={{ flex: 1 }}>
 
             {/* First View Start */}
+            <View>
+                <View style={{ width: '100%', alignItems: 'flex-start', padding: 50, }}>
+                    <View style={{ flexDirection: 'row' }}>
+                        <View
+                            style={{
+                                width: 30,
+                                height: 30,
+                                borderRadius: 15,
+                                backgroundColor: isSelected > 0 ? 'green' : '#f2f2f2',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        ><Text style={{ color: '#fff' }}>1</Text>
+                        </View>
+                        <View style={{ marginLeft: 20 }}>
+                            <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Vehicle Picked from Home</Text>
+                        </View>
+                    </View>
+                    <View style={{ width: 6, height: 100, backgroundColor: '#f2f2f2', marginLeft: 12.5 }}></View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <View
+                            style={{
+                                width: 30,
+                                height: 30,
+                                borderRadius: 15,
+                                backgroundColor: isSelected > 1 ? 'green' : '#f2f2f2',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        ><Text style={{ color: '#fff' }}>2</Text>
+                        </View>
+                        <View style={{ marginLeft: 20 }}>
+                            <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Service Start</Text>
+                        </View>
+                    </View>
+                    <View style={{ width: 6, height: 100, backgroundColor: '#f2f2f2', marginLeft: 12.5 }}></View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <View
+                            style={{
+                                width: 30,
+                                height: 30,
+                                borderRadius: 15,
+                                backgroundColor: isSelected > 2 ? 'green' : '#f2f2f2',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        ><Text style={{ color: '#fff' }}>3</Text>
+                        </View>
+                        <View style={{ marginLeft: 20 }}>
+                            <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Service End</Text>
+                        </View>
+                    </View>
+                    <View style={{ width: 6, height: 100, backgroundColor: '#f2f2f2', marginLeft: 12.5 }}></View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <View
+                            style={{
+                                width: 30,
+                                height: 30,
+                                borderRadius: 15,
+                                backgroundColor: isSelected > 3 ? 'green' : '#f2f2f2',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        ><Text style={{ color: '#fff' }}>4</Text>
+                        </View>
+                        <View style={{ marginLeft: 20 }}>
+                            <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Vehicle Drop at Home</Text>
+                        </View>
+                    </View>
+                </View>
+                {/* First View End */}
 
-            <View style={{ width: '100%', alignItems: 'flex-start', padding: 50, }}>
-                <View style={{ flexDirection: 'row' }}>
-                    <View
-                        style={{
-                            width: 30,
-                            height: 30,
-                            borderRadius: 15,
-                            backgroundColor: isSelected > 0 ? 'green' : '#f2f2f2',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                    ><Text style={{ color: '#fff' }}>1</Text>
-                    </View>
-                    <View style={{ marginLeft: 20 }}>
-                        <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Vehicle Picked from Home</Text>
-                    </View>
+                {/* Second View Start / Only Lines*/}
+                <View style={{ width: '100%', alignItems: 'flex-start', padding: 50, position: 'absolute', top: 0 }}>
+
+                    <Animated.View style={{ width: 6, height: progress1, marginTop: 30, backgroundColor: 'green', marginLeft: 12.5 }}></Animated.View>
+
+                    <Animated.View style={{ width: 6, height: progress2, marginTop: 30, backgroundColor: 'green', marginLeft: 12.5 }}></Animated.View>
+
+                    <Animated.View style={{ width: 6, height: progress3, marginTop: 30, backgroundColor: 'green', marginLeft: 12.5 }}></Animated.View>
+
                 </View>
-                <View style={{ width: 6, height: 100, backgroundColor: '#f2f2f2', marginLeft: 12.5 }}></View>
-                <View style={{ flexDirection: 'row' }}>
-                    <View
-                        style={{
-                            width: 30,
-                            height: 30,
-                            borderRadius: 15,
-                            backgroundColor: isSelected > 1 ? 'green' : '#f2f2f2',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                    ><Text style={{ color: '#fff' }}>2</Text>
-                    </View>
-                    <View style={{ marginLeft: 20 }}>
-                        <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Service Start</Text>
-                    </View>
-                </View>
-                <View style={{ width: 6, height: 100, backgroundColor: '#f2f2f2', marginLeft: 12.5 }}></View>
-                <View style={{ flexDirection: 'row' }}>
-                    <View
-                        style={{
-                            width: 30,
-                            height: 30,
-                            borderRadius: 15,
-                            backgroundColor: isSelected > 2 ? 'green' : '#f2f2f2',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                    ><Text style={{ color: '#fff' }}>3</Text>
-                    </View>
-                    <View style={{ marginLeft: 20 }}>
-                        <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Service End</Text>
-                    </View>
-                </View>
-                <View style={{ width: 6, height: 100, backgroundColor: '#f2f2f2', marginLeft: 12.5 }}></View>
-                <View style={{ flexDirection: 'row' }}>
-                    <View
-                        style={{
-                            width: 30,
-                            height: 30,
-                            borderRadius: 15,
-                            backgroundColor: isSelected > 3 ? 'green' : '#f2f2f2',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                    ><Text style={{ color: '#fff' }}>4</Text>
-                    </View>
-                    <View style={{ marginLeft: 20 }}>
-                        <Text style={{ color: 'black', alignItems: 'center', fontSize: 18 }}>Vehicle Drop at Home</Text>
-                    </View>
-                </View>
+                {/* second view completed / Only Lines*/}
             </View>
-            {/* First View End */}
-
-            {/* Second View Start / Only Lines*/}
-            <View style={{ width: '100%', alignItems: 'flex-start', padding: 50, position: 'absolute', top: 0 }}>
-
-                <Animated.View style={{ width: 6, height: progress1, marginTop: 30, backgroundColor: 'green', marginLeft: 12.5 }}></Animated.View>
-
-                <Animated.View style={{ width: 6, height: progress2, marginTop: 30, backgroundColor: 'green', marginLeft: 12.5 }}></Animated.View>
-
-                <Animated.View style={{ width: 6, height: progress3, marginTop: 30, backgroundColor: 'green', marginLeft: 12.5 }}></Animated.View>
-
-            </View>
-            {/* second view completed / Only Lines*/}
 
             {/* Buttons starts */}
 
@@ -134,6 +135,7 @@ const ProgressLine = () => {
                     alignSelf: 'center',
                     marginHorizontal: 20,
                 }}
+
                 onPress={() => {
                     if (isSelected == 1) {
                         start1();
