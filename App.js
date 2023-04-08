@@ -7,13 +7,14 @@ import {Store} from './src/redux/Store';
 import DatePicker from './src/perfectplateapp/DatePicker';
 import DateTimePicker from './src/calendar/DateTimePicker';
 import MyCalendar from './src/calendar/MyCalendar';
+import ApiRequest from './src/apirequest/ApiRequest';
 const App = () => {
   return (
     <View style={{flex: 1}}>
       {/* <Text style={{color: 'red'}}>App</Text> */}
       {/* <MainFile /> */}
       {/* <DatePicker /> */}
-      <MyCalendar />
+      <ApiRequest />
     </View>
     // <Provider store={Store}>
     //   <DemoApp />
