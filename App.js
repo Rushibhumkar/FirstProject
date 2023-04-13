@@ -8,13 +8,15 @@ import DatePicker from './src/perfectplateapp/DatePicker';
 import DateTimePicker from './src/calendar/DateTimePicker';
 import MyCalendar from './src/calendar/MyCalendar';
 import ApiRequest from './src/apirequest/ApiRequest';
+import BottomSheet from './src/compontnts/BottomSheet';
+import StatusBarScreen from './src/compontnts/StatusBarScreen';
 const App = () => {
   return (
     <View style={{flex: 1}}>
       {/* <Text style={{color: 'red'}}>App</Text> */}
       {/* <MainFile /> */}
       {/* <DatePicker /> */}
-      <ApiRequest />
+      <StatusBarScreen />
     </View>
     // <Provider store={Store}>
     //   <DemoApp />
