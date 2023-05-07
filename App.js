@@ -1,22 +1,49 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {StyleSheet, Text, View, PermissionsAndroid} from 'react-native';
+import React, {useEffect} from 'react';
 import MainFile from './src/MainFile';
 import {Provider} from 'react-redux';
 import DemoApp from './src/redux/DemoApp';
 import {Store} from './src/redux/Store';
-import DatePicker from './src/perfectplateapp/DatePicker';
-import DateTimePicker from './src/calendar/DateTimePicker';
-import MyCalendar from './src/calendar/MyCalendar';
-import ApiRequest from './src/apirequest/ApiRequest';
-import BottomSheet from './src/compontnts/BottomSheet';
-import StatusBarScreen from './src/compontnts/StatusBarScreen';
+import CountDown from './src/compontnts/CountDown';
+import ColorGenerator from './src/compontnts/ColorGenerator';
+import FetchApi from './src/compontnts/FetchApi';
+import Home from './src/compontnts/Home';
+import ReduxMainFile from './src/compontnts/reduxmain/ReduxMainFile';
+
 const App = () => {
+  // useEffect(() => {
+  //   const requestCameraPermission = async () => {
+  //     try {
+  //       const granted = await PermissionsAndroid.request(
+  //         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+  //         {
+  //           title: 'Cool Photo App Camera Permission',
+  //           message:
+  //             'Cool Photo App needs access to your camera ' +
+  //             'so you can take awesome pictures.',
+  //           buttonNeutral: 'Ask Me Later',
+  //           buttonNegative: 'Cancel',
+  //           buttonPositive: 'OK',
+  //         },
+  //       );
+  //       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+  //         console.log('You can use the camera');
+  //       } else {
+  //         console.log('Camera permission denied');
+  //       }
+  //     } catch (err) {
+  //       console.warn(err);
+  //     }
+  //   };
+  //   requestCameraPermission();
+  // }, []);
+
   return (
     <View style={{flex: 1}}>
       {/* <Text style={{color: 'red'}}>App</Text> */}
       {/* <MainFile /> */}
       {/* <DatePicker /> */}
-      <StatusBarScreen />
+      <ReduxMainFile />
     </View>
     // <Provider store={Store}>
     //   <DemoApp />

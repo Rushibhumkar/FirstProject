@@ -1,56 +1,63 @@
-import { StyleSheet, Text, View,ScrollView, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { Component } from 'react';
+import {
+  Button,
+  PermissionsAndroid,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
-const Home = ({navigation,route}) => {
-  const {myName}=route.params;
+const requestCameraPermission = async () => {
+  try {
+    const granted = await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+      {
+        title: 'Cool Photo App Camera Permission',
+        message:
+          'Cool Photo App needs access to your camera ' +
+          'so you can take awesome pictures.',
+        buttonNeutral: 'Ask Me Later',
+        buttonNegative: 'Cancel',
+        buttonPositive: 'OK',
+      },
+    );
+    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+      console.log('You can use the camera');
+    } else {
+      // requestCameraPermission()
+      console.log('Camera permission denied');
+    }
+  } catch (err) {
+    console.warn(err);
+  }
+};
 
+const Home = ({ navigation }) => {
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <Text style={[styles.txt]} >Hello {myName} 😘 </Text>
-        <TouchableOpacity style={[styles.goBackBtn]}
-        onPress={()=>navigation.goBack()}
-        // onPress={()=>navigation.navigate('Login')}
-        >
-          <Text style={[styles.goBackText]}>Go Back</Text>
-        </TouchableOpacity>
-      </View>
-    </ScrollView>
-  )
+    <View style={styles.container}>
+      <Text style={styles.item}>Try permissions</Text>
+      <Button title="request permissions" onPress={requestCameraPermission} />
+      <Button title="location screen" onPress={() => navigation.navigate('location')} />
+    </View>
+  );
+
 }
 
-export default Home
-
 const styles = StyleSheet.create({
-    txt:{
-        color:'black'
-    },
-    col:{
-        display:"flex",
-        flexDirection: "column"
-    },
-    row:{
-        display:'flex',
-        flexDirection:"row"
-    },
-    container:{
-      display:'flex',
-      flexDirection: "column",
-      alignItems:'center',
-      justifyContent:'center',
-      marginVertical:20,
-      marginHorizontal:15
-    },
-    goBackBtn:{
-     display:'flex',
-     paddingHorizontal:20,
-     paddingVertical:10,
-     backgroundColor:'cyan',
-     borderRadius:50,
-     marginTop:10
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
+    backgroundColor: '#ecf0f1',
+    padding: 8,
+  },
+  item: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+});
 
-    },
-    goBackText:{
-      color:'black'
-    }
-})
+export default Home;

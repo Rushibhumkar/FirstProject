@@ -19,7 +19,7 @@ const ColorGenerator = () => {
     return `rgb(${red},${green},${blue})`;
   };
 
-  console.log(newColor);
+  // console.log(newColor);
   return (
     <View style={[styles.mainContainer]}>
       <TouchableOpacity
@@ -63,6 +63,7 @@ export default ColorGenerator;
 const styles = StyleSheet.create({
   mainContainer: {
     marginTop: 80,
+    paddingBottom: 50,
   },
   buttonStyle: {
     backgroundColor: "#00b0ff",

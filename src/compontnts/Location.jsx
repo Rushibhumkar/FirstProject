@@ -28,6 +28,7 @@ const Location = () => {
                                 setLatitude(position.coords.latitude);
                                 setLongitude(position.coords.longitude);
                             },
+                            console.log("loc scr : per granted"),
                             error => {
                                 console.error(error);
                             },
@@ -38,7 +39,7 @@ const Location = () => {
                             },
                         );
                     } else {
-                        console.log('Location permission denied');
+                        console.log('loc scr : Location permission denied');
                     }
                 } catch (err) {
                     console.warn(err);

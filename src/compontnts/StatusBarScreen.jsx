@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, Platform, SafeAreaView, StatusBar, } from 'react-native'
+import { StyleSheet, Text, View, Button, Platform, SafeAreaView, StatusBar } from 'react-native'
 import React, { useState, useEffect } from 'react'
 
 const STYLES = ['default', 'dark-content', 'light-content'];
@@ -33,26 +33,26 @@ const StatusBarScreen = () => {
             <StatusBar
                 animated={true}
                 // backgroundColor="#61dafb"
-                backgroundColor="#494"
+                backgroundColor='#5D5FEF'
                 barStyle={statusBarStyle}
                 showHideTransition={statusBarTransition}
                 hidden={hidden}
             />
-            <Text style={styles.textStyle}>
+            {/* <Text style={styles.textStyle}>
                 StatusBar Visibility:{'\n'}
                 {hidden ? 'Hidden' : 'Visible'}
             </Text>
             <Text style={styles.textStyle}>
                 StatusBar Style:{'\n'}
                 {statusBarStyle}
-            </Text>
+            </Text> */}
             {Platform.OS === 'ios' ? (
                 <Text style={styles.textStyle}>
                     StatusBar Transition:{'\n'}
                     {statusBarTransition}
                 </Text>
             ) : null}
-            <View style={styles.buttonsContainer}>
+            {/* <View style={styles.buttonsContainer}>
                 <Button title="Toggle StatusBar" onPress={changeStatusBarVisibility} />
                 <Button title="Change StatusBar Style" onPress={changeStatusBarStyle} />
                 {Platform.OS === 'ios' ? (
@@ -61,7 +61,13 @@ const StatusBarScreen = () => {
                         onPress={changeStatusBarTransition}
                     />
                 ) : null}
-            </View>
+            </View> */}
+            {Platform.OS === 'ios' ? (
+                <Button
+                    title="Change StatusBar Transition"
+                    onPress={changeStatusBarTransition}
+                />
+            ) : null}
         </SafeAreaView>
     )
 }

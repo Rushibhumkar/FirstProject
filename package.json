@@ -26,6 +26,7 @@
     "react-native-elements": "^3.4.3",
     "react-native-geolocation-service": "^5.3.1",
     "react-native-gesture-detector": "^1.1.2",
+    "react-native-gesture-handler": "^2.9.0",
     "react-native-modal": "^13.0.1",
     "react-native-modal-datetime-picker": "^14.0.1",
     "react-native-pager-view": "^6.1.4",
@@ -36,7 +37,8 @@
     "react-native-tab-view": "^3.5.0",
     "react-native-vector-icons": "^9.2.0",
     "react-navigation": "^4.4.4",
-    "react-redux": "^8.0.5"
+    "react-redux": "^8.0.5",
+    "redux-saga": "^1.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
