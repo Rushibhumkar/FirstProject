@@ -1,14 +1,6 @@
 import {StyleSheet, Text, View, PermissionsAndroid} from 'react-native';
 import React, {useEffect} from 'react';
-import MainFile from './src/MainFile';
-import {Provider} from 'react-redux';
-import DemoApp from './src/redux/DemoApp';
-import {Store} from './src/redux/Store';
-import CountDown from './src/compontnts/CountDown';
-import ColorGenerator from './src/compontnts/ColorGenerator';
-import FetchApi from './src/compontnts/FetchApi';
-import Home from './src/compontnts/Home';
-import ReduxMainFile from './src/compontnts/reduxmain/ReduxMainFile';
+import Location from './src/compontnts/allComponents/Location';
 
 const App = () => {
   // useEffect(() => {
@@ -39,12 +31,15 @@ const App = () => {
   // }, []);
 
   return (
+    // Wrap your app with the new GestureHandler
     <View style={{flex: 1}}>
       {/* <Text style={{color: 'red'}}>App</Text> */}
       {/* <MainFile /> */}
       {/* <DatePicker /> */}
-      <ReduxMainFile />
+      {/* <ReduxIncDec /> */}
+      <Location />
     </View>
+
     // <Provider store={Store}>
     //   <DemoApp />
     // </Provider>

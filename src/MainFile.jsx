@@ -3,33 +3,33 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import ColorGenerator from './compontnts/ColorGenerator';
-import CountDown from './compontnts/CountDown';
-import HookEffect from './compontnts/HookEffect';
-import HorScroll from './compontnts/HorScroll';
-import Linking from './compontnts/Linking';
-import Login from './compontnts/Login';
-import MapFunction from './compontnts/MapFunction';
-import AdvMapFun from './compontnts/AdvMapFun';
-import NetflixCard from './compontnts/NetflixCard';
-import SignUp from './compontnts/SignUp';
-import TopTabNavi from './compontnts/TopTabNavi';
-import SimpleForm from './compontnts/SimpleForm';
-import SimplePage from './compontnts/SimplePage';
-import DrawerNav from './compontnts/DrawerNav';
-import ShowMore from './compontnts/ShowMore';
-import PopUp from './compontnts/PopUp'
-import Location from './compontnts/Location';
-import SendLocation from './compontnts/SendLocation';
-import FetchApi from './compontnts/FetchApi';
+import ColorGenerator from './compontnts/allComponents/ColorGenerator';
+import CountDown from './compontnts/allComponents/CountDown';
+import HookEffect from './compontnts/allComponents/HookEffect';
+import HorScroll from './compontnts/allComponents/HorScroll';
+import Linking from './compontnts/allComponents/Linking';
+import Login from './compontnts/allComponents/Login';
+import MapFunction from './compontnts/allComponents/MapFunction';
+import AdvMapFun from './compontnts/allComponents/AdvMapFun';
+import NetflixCard from './compontnts/allComponents/NetflixCard';
+import SignUp from './compontnts/allComponents/SignUp';
+import TopTabNavi from './compontnts/allComponents/TopTabNavi';
+import SimpleForm from './compontnts/allComponents/SimpleForm';
+import SimplePage from './compontnts/allComponents/SimplePage';
+import DrawerNav from './compontnts/allComponents/DrawerNav';
+import ShowMore from './compontnts/allComponents/ShowMore';
+import PopUp from './compontnts/allComponents/PopUp'
+import Location from './compontnts/allComponents/Location';
+import SendLocation from './compontnts/allComponents/SendLocation';
+import FetchApi from './compontnts/allComponents/FetchApi';
 import RohitPackage from './rohitsPackage/RohitPackage';
 import TrackingService from './trackingservice/TrackingService';
 import OwnPackage from './mypackage/OwnPackage';
 import ProgressLine from './mypackage/ProgressLine';
 import LoginPage from './perfectplateapp/LoginPage';
 import CombineFile from './perfectplateapp/CombineFile';
-import Home from './compontnts/Home';
-import AndroidPermissions from './compontnts/AndroidPermissions';
+import Home from './compontnts/allComponents/Home';
+import AndroidPermissions from './compontnts/allComponents/AndroidPermissions';
 import ReduxMainFile from './compontnts/reduxmain/ReduxMainFile';
 
 

@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
-import Product from '../../reduxmain/Product'
-import Header from '../../reduxmain/Header'
+import Product from '../Product'
+import Header from '../Header'
 
-const ProductWrapper = ({ navigation }) => {
+const ProductWrapper = () => {
 
 
     const Products = [
@@ -29,20 +29,18 @@ const ProductWrapper = ({ navigation }) => {
 
     return (
 
-        <View>
-            <View style={styles.outerCont}>
-                <Header />
-                <ScrollView>
-                    {
-                        Products.map((item) => {
-                            return (
+        <View style={styles.outerCont}>
+            <Header />
+            <ScrollView style={{ flex: 1 }}>
+                {
+                    Products.map((item) => {
+                        return (
 
-                                <Product item={item} key={item.name} />
-                            )
-                        })
-                    }
-                </ScrollView>
-            </View>
+                            <Product item={item} key={item.name} />
+                        )
+                    })
+                }
+            </ScrollView>
         </View>
     )
 }
@@ -51,8 +49,9 @@ export default ProductWrapper;
 
 const styles = StyleSheet.create({
     outerCont: {
+        flex: 1,
         backgroundColor: "#fff",
         // marginBottom: 40,
-        paddingBottom: 60,
+        // paddingBottom: 10,
     },
 })

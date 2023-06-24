@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import StatusBarScreen from '../StatusBarScreen';
+import StatusBarScreen from '../allComponents/StatusBarScreen';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from './reduxSecond/action';
 
